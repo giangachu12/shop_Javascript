@@ -1,0 +1,312 @@
+#headdd{
+    position: relative;
+}
+#headd{
+    background-color:#010;
+    height: 110px;
+    color: whitesmoke;
+    width: 100%;
+    position: relative;
+}
+#conthead{
+   
+    height: 90px;
+    width: 100%;
+ 
+    position: -webkit-sticky ;
+    position: sticky;
+    top: 0;
+    margin: 10px 100px;
+    position: relative;
+}
+#logo{
+    text-align: center;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    cursor: pointer;
+}
+#bodyhead{
+    display: inline-block;
+    width: 17%;
+    height: auto;
+    color:red;
+}
+#concon{
+  position: absolute;
+
+}
+
+#danhmuc{
+
+    height:  10px;
+}
+.divtext{
+ 
+    margin-left: 17%;
+}
+#text{
+    text-align: center;
+    background-color: brown;
+    height: 30px;
+}
+
+#ul_watch{
+    padding:0px;
+    list-style:none;
+    background-color:gray;
+    cursor:pointer;
+}
+ #text:hover{
+     background-color:gray;
+ }
+.watch_option:hover{
+    background-color: brown;
+    color: white;
+}
+#option_sp{
+    display: none;
+}
+#concon:hover  #option_sp{
+    display:block;
+}
+#tw0F{
+    position: absolute;
+    display: flex;
+    left: 200px;
+    background-color:rgb(219, 183, 20);
+}
+#div_form{
+     width: 100%;
+     height: 90px; 
+     position:absolute;
+     left: 130px;
+     display: flex;
+}
+#form{
+    display: flex;
+    height: 38px;
+    padding:15px;
+}
+#ull{
+  
+    list-style: none;
+    display: flex;
+}
+.list{
+    padding: 10px ;
+    cursor: pointer;
+    
+}
+
+.addinfor{
+    margin: 21px;
+    width: 100px;
+}
+#touch{
+    position:relative;
+}
+ 
+#partOne{
+    width:17%;
+    box-shadow: 1px 1px black;
+    height: 500px;
+    top: 100px;
+    position: absolute;
+     
+}
+/*cccccc*/
+#body_2{
+    position: relative;
+    margin-left:230px;
+    margin-top: 100px;
+}
+ 
+#ul{
+    margin: 0px;
+    height: auto;
+    padding: 0px; 
+    list-style: none;
+    background-color:green;
+}
+#parent{
+    width: 80%;
+}
+.li{
+    width: 20%;
+    display:inline-block;
+    color: whitesmoke;
+    height: 200px;
+    padding: 0px;
+    
+}
+.image{
+    width:100%;
+    height: 231px;
+}
+.text{
+    margin-right:  30%;
+    text-align: center;
+    margin:0px;
+   
+}
+.content{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(71, 64, 64, 0.678);
+    
+}
+#div_validate_form{
+    position: absolute;
+    margin-left: 25%;
+    background-color: green;
+    width: 40%;
+    height: 200px;
+    padding-bottom: 40px;
+}
+.content_header{
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 200px;
+     width: 40%;
+    height: 500px;
+     
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    0%   {  left:0px; top:0px;}
+    75%  {  left:0px; top:200px;}
+    100% {  left:0px; top:0px;}
+  }
+  /* Standard syntax */
+  @keyframes example {
+    0%   {  left:0px; top:0px;}
+    75%  {  left:0px; top:200px;}
+    100% {  left:0px; top:0px;}
+}
+.class_header{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 19px;
+    background-color: rgb(42, 207, 185);
+    
+}
+.span_{
+         
+    margin-left: 98%;
+    width: 5%;
+    background-color: rgb(179, 71, 76);
+}
+.span_:hover{
+    background-color: rgb(97, 32, 182);
+}
+#body_conten{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 231px;
+    background-color: rgb(97, 32, 182);
+    z-index: 1;
+}
+#ongke{
+    width: 100%;
+    height: 231px;
+    border: 1px solid black;
+}
+#jpe{
+    height: 231px;
+}
+
+.footer_{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(182, 180, 32);
+}
+#gtg{ 
+    margin-left:110px;
+    width:231px;
+    height: 231px;
+}
+#li_id{
+position: relative;
+}
+
+.conten{
+    width: 75%;
+    margin-top: 100px;
+}
+#cart_divvvvv{
+    position: absolute;
+    width:150px;
+    z-index: 1;
+   
+}
+
+#li_id:hover #cart_divvvvv{
+     background-color:red;
+     display: block;
+}
+.img_zom_content{
+    position:relative;
+
+}
+.img_room {
+    float: left;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    margin-top:200px;
+    width: 100px;
+    height: 40px;
+}
+.img_zoom_result {
+    float: right;
+    border: 1px solid #ac3535;
+    margin-right: 395px;
+    /*set the size of the result div:*/
+    width: 300px;
+    height: 300px;
+}
+#car_div{
+     
+    width: 100%;
+    height: auto;   
+}
+.image_cart{
+ 
+    float: left;
+    height: 50px;
+    width: auto;
+    padding: 0px;
+}
+.divtext_cart{
+    float: right;
+    width:auto ;
+    text-align: center;
+    height: 50px;
+    padding: 0px 3px;
+    margin-right: 10px;
+}
+#cart{
+  
+    padding: 0px 7px;
+    width: 100%;
+    height: auto;
+}
+#text_cart{
+    padding-left: 0px;
+}
+
+ 
+ 

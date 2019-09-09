@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/shop.css">
+    <title>shop đồng hồ </title>
+</head>
+
+<body>
+    <div id="headdd">
+        <div id="headd">
+            <div id="conthead">
+                <div id="logo">
+                    <h3 id="text">logo</h3>
+                </div>
+                <div id="div_form">
+                    <from id="form">
+                        <input type="text" placeholder="tim kiem" id="search">
+                        <button onclick="search()">tim kiem</button>
+                    </from>
+                    <ul id="ull">
+                        <li class="list" id="li_id">
+                            <div>
+                                giỏ hang ()
+                                <div id="cart_divvvvv">
+                                    <div id="cart">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list">
+                            hotline:
+                        </li>
+                        <li class="list">
+                            hệ thống cửa hàng
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="bodyhead">
+                <div id="concon">
+                    <div id="danhmuc">
+                        <h3 id="text">danh muc san pham</h3>
+                    </div>
+                    <div id="option_sp">
+                        <ul id="ul_watch">
+                            <li class="watch_option" value="1">dong ho nam</li>
+                            <li class="watch_option" value="2">dong ho nu</li>
+                            <li class="watch_option" value="3">dong ho doi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tw0F">
+                <form id="smt">
+                    image:<input type="text" id="image" class="addinfor">
+                    name: <input type="text" id="name" class="addinfor">
+                    price:<input type="number" id="price" class="addinfor">
+                    id:<input type="text" id="id" class="addinfor">
+
+                    t.hiệu: <select id="select">
+                        <option value="1">casino</option>
+                        <option value="2">QQ</option>
+                        <option value="3">gold</option>
+                    </select>
+                    <select id="type">
+                        <option value="1">nam</option>
+                        <option value="2">nu</option>
+                        <option value="3">doi</option>
+                    </select>
+                    <button type="submit">sbm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="touch">
+        <div id="body__">
+            <div id="partOne">
+                <div>
+                    <form>
+                        <input type="checkbox" value="1" class="form_check">casino <br>
+                        <input type="checkbox" value="2" class="form_check">QQ <br>
+                        <input type="checkbox" value="3" class="form_check"> Gold
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="body_2">
+        <div>
+            <div id="parent_ul">
+                <ul id="ul">
+                </ul>
+                <div class="content" id="id01">
+                    <div id="div_validate_form">
+                        <form id="validate_form">
+                            <input type='text' id="username" placeholder="name">
+                            <input type="email" id="email" placeholder="email">
+                            <input type="number" id="number" placeholder="phone number">
+                            <input type="password" placeholder="password">
+                            <button type="submit">submit</button>
+                        </form>
+                    </div>
+                    <div class="content_header">
+                        <header class="class_header">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                class="span_">&times;</span>
+                        </header>
+                        <article id="body_conten" id="submit_article">
+                        </article>
+                        <footer class="footer_">
+                            <button type="button" id="addToCart">add to cart</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--js-->
+    <script>
+        var products = [
+            {
+                "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSzkxq9OuoLAIze5VrebN_uY-dmpm9VTq19ZCf-AJSQ3nIx4Bw",
+                "name": " CASINO I",
+                "price": 110,
+                "id": "1",
+                "value": "1",
+                "type": "1"
+            },
+            {
+                "imgUrl": "https://cdn3.dhht.vn/wp-content/uploads/2017/01/150_-GA-110DC-2ADR-BA-110DC-2A2DR-399x399.jpg",
+                "name": " CASINO II",
+                "price": 91,
+                "id": "2",
+                "value": "1",
+                "type": "2"
+            },
+            {
+                "imgUrl": "https://cdn3.dhht.vn/wp-content/uploads/2019/05/43_K8P231Q4-399x399.jpg",
+                "name": "CASINO III",
+                "price": 94.5,
+                "id": "3",
+                "value": "1",
+                "type": "3"
+            },
+            {
+                "imgUrl": "https://cdn3.dhht.vn/wp-content/uploads/2017/01/122_-MTP-E116L-1AVDF-LTP-E116L-1AVDF-399x399.jpg",
+                "name": "QQ I",
+                "price": 438.9,
+                "id": "4",
+                "value": "2",
+                "type": "1"
+            },
+            {
+                "imgUrl": "https://cdn3.dhht.vn/wp-content/uploads/2015/10/38_LTP-1165N-9CRDF-399x399.jpg",
+                "name": "QQ S",
+                "price": 438.9,
+                "id": "5",
+                "value": "2",
+                "type": "2"
+            },
+            {
+                "imgUrl": "https://cdn3.dhht.vn/wp-content/uploads/2018/01/21_D204SPL-399x399.jpg",
+                "name": "QQ rt",
+                "price": 438.9,
+                "id": "6",
+                "value": "2",
+                "type": "3"
+            },
+            {
+                "imgUrl": "https://cdn3.dhht.vn/wp-content/uploads/2019/01/10_D182RWP-399x399.jpg",
+                "name": "GOLD cG",
+                "price": 438.9,
+                "id": "7",
+                "value": "3",
+                "type": "3"
+            },
+            {
+                "imgUrl": "https://cdn3.dhht.vn/wp-content/uploads/2016/02/16_T085.410.36.011.00-T085.210.36.011.00-399x399.jpg",
+                "name": "GOLD ffd",
+                "price": 438.9,
+                "id": "8",
+                "value": "3",
+                "type": "2"
+            },
+            {
+                "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaZuYXVBfIs2v7PeXRSGeiMyVgA8CoDTYQ9hVakcha1dtS2ilKzQ",
+                "name": "GOLD 5T",
+                "price": 94.5,
+                "id": "9",
+                "value": "3",
+                "type": "1"
+            },
+        ]
+        function search() {
+            var sch = document.getElementById("search").value;
+            var a = sch.toUpperCase();
+            var search_colect = [];
+            var i = 0;
+            for (i = 0; i < products.length; i++) {
+                var product = products[i];
+                var b = product.name;
+                if (b.toUpperCase().indexOf(a) > -1) {
+                    search_colect.push(product);
+                }
+            }
+            myFunction(search_colect);
+        }
+        var smt = document.getElementById("smt");
+        smt.addEventListener("submit", function (evt) {
+            evt.preventDefault();
+
+            var imgUrl = document.getElementById("image").value;
+            var name = document.getElementById("name").value;
+            var price = document.getElementById("price").value;
+            var id = document.getElementById("id").value;
+            var value = document.getElementById("select").value;
+            var type = document.getElementById("type").value;
+            console.log(value + "....value selecter...")
+
+            var colect = {
+                imgUrl: imgUrl,
+                name: name,
+                price: price,
+                id: id,
+                value: value,
+                type: type
+            };
+            products.push(colect);
+
+            myFunction(products);
+        })
+        var content = [];
+        var checkElements = document.getElementsByClassName("form_check");
+        for (checkElement of checkElements) {
+            checkElement.addEventListener("change", function () {
+                var a = this.value;
+                console.log(content + "....old.");
+                var index = content.indexOf(a);
+                if (index > -1) {
+                    content.splice(index, 1);
+                }
+
+                if (this.checked) {
+                    content.push(a);
+                }
+                console.log(content + "....new.");
+
+                if (content.length == " ") {
+                    myFunction(products);
+                } else {
+                    var fillter = [];
+                    var i, j = 0;
+                    for (i = 0; i < content.length; i++) {
+                        for (j = 0; j < products.length; j++) {
+                            var product = products[j];
+                            if (content[i] == product.value) {
+                                fillter.push(product);
+                            }
+                        }
+                    }
+                    console.log(fillter + "...fillter..")
+                    myFunction(fillter);
+                }
+            });
+        }
+        //remove
+        //
+        var types = document.getElementsByClassName("watch_option");
+        for (oneType of types) {
+            oneType.addEventListener("click", function () {
+                var valueType = this.value;
+                console.log(valueType + "type.....")
+                var contenType = [];
+                var parentt = [];
+                var i = 0;
+                for (i = 0; i < products.length; i++) {
+                    var product = products[i];
+                    if (product.type == valueType) {
+                        contenType.push(product);
+                    }
+                }
+                // check conten 
+                if (content.length == " ") {
+                    myFunction(contenType);
+                    console.log(content + "*if true ->conten*")
+                } else {
+
+                    var i, j = 0;
+                    for (i = 0; i < content.length; i++) {
+                        for (j = 0; j < contenType.length; j++) {
+                            var child = contenType[j];
+                            if (content[i] == child.value && child.type == 1) {
+                                parentt.push(child);
+                            } else if (content[i] == child.value && child.type == 2) {
+                                parentt.push(child);
+                            } else if (content[i] == child.value && child.type == 3) {
+                                parentt.push(child);
+                            }
+                        }
+                    }
+                    console.log(parentt + "parent.1...")
+                    myFunction(parentt);
+                    console.log(content + "**else ->conten*")
+                }
+                console.log(contenType + "...contentype..")
+            })
+        }
+        //
+        //
+        var ul = document.getElementById("ul");
+        function myFunction(products) {
+            var i = 0;
+
+            var tag = "";
+            var gg = "";
+            for (i; i < products.length; i++) {
+                var product = products[i];
+                tag += `<li class="li">
+                        <div>
+                            <div class="divimg" data-id=${product.id}>
+                                <img src="${product.imgUrl}" class="image">
+                            </div>
+                            <div class="divtext">
+                                <h6 class="text">${product.name}</h6>
+                            </div>
+                            <div  class="divtext">
+                                <p class="text">${product.price}</p>
+                            </div>                     
+                        </div>                      
+                </li> `
+            }
+            ul.innerHTML = tag;
+            console.log(gg + "gggg")
+            remove();
+        }
+        myFunction(products);
+        function remove() {
+            var mod = document.getElementById("body_conten");
+            var modal = document.getElementById("id01");
+            var all = document.getElementsByClassName("divimg");
+            console.log(all + "image new....")
+            for (one of all) {
+                one.addEventListener("click", function () {
+                    var id_ = this.getAttribute("data-id");
+                    console.log(id_ + " data id")
+                    show();
+                    function show() {
+                        products.filter(function (item) {
+                            console.log(item.id + " idtem.innerhtml 1")
+                            console.log(id_ + " id_1")
+                            if (id_ == item.id) {
+                                var tg = `  <div id="jpe">
+                                                <div>
+                                                    <img src="${item.imgUrl}" class="image" id="gtg">
+                                                </div>
+                                                <div class="divtext">
+                                                    <h6 class="text">${item.name}</h6>
+                                                </div>
+                                                <div class="divtext">
+                                                    <p class="text">${item.price}</p>
+                                                </div>                     
+                                            </div> `
+
+                                mod.innerHTML = tg;
+                                modal.style.display = "block";
+                            }
+                            // addToCart(id_, modal);
+                        });
+                    }
+                    addtocart();
+                    function addtocart() {
+                        var cart = document.getElementById("cart");
+                        var add_to_cart = document.getElementById("addToCart");
+
+                        add_to_cart.addEventListener("click", function () {
+                            modal.style.display = "none";
+                            uuu();
+                            function uuu() {
+                                products.filter(function (item) {
+                                    console.log(item.id + "...item. id")
+                                    if (id_ == item.id) {
+                                        var div_cart = `
+                                        <div id="car_div">
+                                            <div id="div_img_cart">
+                                                <img src="${item.imgUrl}" class="image_cart">
+                                            </div>
+                                            <div class="divtext_cart">
+                                                <h6 class="text_cart">${item.name}</h6>
+                                            </div>
+                                            <div class="divtext_cart">
+                                                <h6 class="text_cart">${item.price}</h6>
+                                            </div>
+                                        </div>
+                                    `
+                                        cart.innerHTML += div_cart;
+                                        console.log(div_cart + "div cart element")
+                                    }
+                                });
+                            }
+                        });
+                    };
+                });
+            }
+            modal.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
